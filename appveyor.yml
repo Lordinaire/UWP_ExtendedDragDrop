@@ -1,8 +1,23 @@
 image: Visual Studio 2015
 
+environment:
+  SignClientSecret:
+    secure: oR9TMOkkvP/prmXyMT+p6mQhjyw3JDLbuywezBABvXzkvNsdNZgi2yPaHhgaofrb
+
 branches:
   only:
   - master
   
 before_build:
   - nuget restore
+  
+skip_branch_with_pr: true
+
+skip_commits:
+  files:
+    - '**/*.md'
+    
+skip_non_tags: true
+
+nuget:
+  disable_publish_on_pr: true
