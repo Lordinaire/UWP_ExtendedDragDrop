@@ -3,8 +3,6 @@ UWP Extended Drag & Drop
 
 This project demonstrates how to create a drag & drop system. It doesn't *extend* the native UWP drag & drop system !
 
-## Build status
-
 ## Getting started
 
 ### Custom frame 
